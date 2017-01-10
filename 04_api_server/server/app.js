@@ -43,20 +43,24 @@ app.get('/', function(req, res) {
 
 app.get('/api/TodoItems', function(req, res) {
 	res.json(items);
-})
+});
 
 app.post('/api/TodoItems', function(req, res) {
 	res.status(201).json(req.body);
-})
+});
 
 app.get('/api/TodoItems/:id', function(req, res) {
 	res.json(items[req.params.id]);
-})
+});
 
 app.delete('/api/TodoItems/:id', function(req, res) {
 	let item = items[req.params.id]
 	items.splice( req.params.id, 1);
   res.json(item);
-})
+});
+
+app.put('/api/TodoItems', function(req, res) {
+  res.status(201).json(req.body);
+});
 
 module.exports = app;

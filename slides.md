@@ -6,83 +6,29 @@ Javascript web servers and databases
 ---
 
 
-1. Express basics, middleware, testing
+1. Node and Express basics, Http vs Express
 
-2. Routing, templating, passport
+2. Project Structure, Middleware, Testing
 
-3. MongoDb and Mongoose
+3. Routing, templating, passport
 
-4. Loopback basics, models, swagger
+4. MongoDb and Mongoose
 
-5. Loopback remote methods
+5. Loopback basics, models, swagger
 
 
 ---
-
 
 ## 1 - Express basics, middleware, and testing
 
 * What is Express?
 
-* Middleware
+* Http server using Node
 
-* App structure
-
-* Testing node apps with Mocha and Chai
+* Express minimum setup
 
 
----
-
-
-## 2 - Express routing, templating, and passport
-
-* Using routes
-
-* Template engines and EJS basics
-
-* Passport
-
----
-
-
-## 3 - MongoDb and Mongoose
-
-* What is MongoDb
-
-* CRUD operations
-
-* Wire up app
-
-* Using Mongoose and a Schema
-
-
----
-
-
-## 4 - Loopback basics, models, swagger
-
-* What is Loopback
-
-* Scaffolding and configuring
-
-* Creating Model
-
-* Swagger
-
-
----
-
-
-## 5 - Loopback Remote Methods
-
-* Remote methods
-
-* Passport
-
-* Recap
-
-
----
+----
 
 
 ## What is Express
@@ -96,4 +42,75 @@ Javascript web servers and databases
 * Version 4
 
 * Middleware/Plugins
+
+
+---
+
+
+## 2 - Express middleware/plugins and testing
+
+* Middleware/Plugins
+
+* App structure
+
+* Testing node apps with Mocha and Chai
+
+
+---
+
+
+## 3 - Express routing, templating, and passport
+
+* Using routes
+
+* Template engines and EJS basics
+
+* Passport
+
+---
+
+
+## 4 - MongoDb and Mongoose
+
+* What is MongoDb
+
+* CRUD operations
+
+* Wire up app
+
+* Using Mongoose and a Schema
+
+
+---
+
+
+## 5 - Loopback basics, models, swagger
+
+* What is Loopback
+
+* Scaffolding and configuring
+
+* Creating Model
+
+* Swagger
+
+
+---
+
+
+## 6 - Loopback Remote Methods
+
+* Remote methods
+
+* Passport
+
+* Recap
+
+
+---
+
+
+
+
+
 

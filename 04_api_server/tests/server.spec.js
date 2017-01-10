@@ -6,29 +6,32 @@ chai.use(chaiHttp);
 
 const app = require('../server/app');
 
-var mockItems = [
-	{
-  	todoItemId: 0,
-  	name: 'an item',
-  	priority: 3,
-  	completed: false
-	},
-	{
-  	todoItemId: 1,
-  	name: 'another item',
-  	priority: 2,
-  	completed: false
-	},
-	{
-  	todoItemId: 2,
-  	name: 'a done item',
-  	priority: 1,
-  	completed: true
-	}
-];
+var mock = [];
 
 describe("server module", function() {
-	it("GET / responds with a 200 response code", function(done) {
+	beforeEach(function(){
+    mock = [
+      {
+        todoItemId: 0,
+        name: 'an item',
+        priority: 3,
+        completed: false
+      },
+      {
+        todoItemId: 1,
+        name: 'another item',
+        priority: 2,
+        completed: false
+      },
+      {
+        todoItemId: 2,
+        name: 'a done item',
+        priority: 1,
+        completed: true
+      }
+    ];
+  })
+  it("GET / responds with a 200 response code", function(done) {
 		chai.request(app)
   		.get('/')
   		.end(function(err, res) {
@@ -80,7 +83,7 @@ describe("server module", function() {
       .end(function(err, res) {
         expect(res).to.have.status(200);
         expect(err).to.be.null;
-        expect(res.body.todoItemId).to.equal(0);
+        expect(res.body.todoItemId).to.equal(1);
         done();
     })
 	});
