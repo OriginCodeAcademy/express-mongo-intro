@@ -50,13 +50,25 @@ app.get('/hello', function(req, res, next) {
     res.render('hello');
 });
 
+const user = {
+	firstName: "Sally",
+	lastName: "Smith",
+	greeting: "Ms.",
+	age: 20,
+	items: [
+		'dog',
+		'cat',
+		'car',
+		'bike'
+	]
+};
+
 app.get('/welcome', function(req, res, next) {
-		const user = {
-			lastName: "Smith",
-			greeting: "Ms.",
-			age: 20
-		}
-    res.render('welcome', { user });
+    ejs.render('welcome', { user });
+});
+
+app.get('/looping', function(req, res, next) {
+    ejs.render('looping.ejs', { user });
 });
 
 // route handler for requests to /
