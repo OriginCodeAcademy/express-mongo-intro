@@ -10,11 +10,11 @@ Javascript web servers and databases
 
 2. Project Structure, Middleware, Testing
 
-3. Routing, templating, passport
+3. Routing and templating
 
 4. MongoDb and Mongoose
 
-5. Loopback basics, models, swagger
+5. Loopback basics, models, swagger, passport
 
 
 ---
@@ -59,16 +59,32 @@ Javascript web servers and databases
 ---
 
 
-## 3 - Express routing, templating, and passport
+## 3 - Express routing, and templating
 
 * Using routes
 
 * Template engines and EJS basics
 
-* Passport
+
+----
+
+## Routing
+
+* Organizing the routes using built in utilities
+
+* Refactor and structure applications routes
+
+
+----
+
+## Templating
+
+* Passing HTML back to the client
+
+* Interpolation (processing and replacing)
+
 
 ---
-
 
 ## 4 - MongoDb and Mongoose
 
@@ -108,9 +124,3 @@ Javascript web servers and databases
 
 
 ---
-
-
-
-
-
-
