@@ -32,6 +32,7 @@ describe("server module", function() {
     ];
   })
   it("GET / responds with a 200 response code", function(done) {
+		expect(items.length).to.equal(3);
 		chai.request(app)
   		.get('/')
   		.end(function(err, res) {
@@ -47,14 +48,14 @@ describe("server module", function() {
   		.get('/api/TodoItems')
   		.end(function(err, res) {
   			expect(res).to.have.status(200);
-  			expect(err).to.be.null; 
+  			expect(err).to.be.null;
   			done();
   		})
 	});
 	it("POST /api/TodoItems responds with item, status 201", function(done) {
 		chai.request(app)
   		.post('/api/TodoItems')
-      .send({ 
+      .send({
         todoItemId: 0,
         name: 'an item',
         priority: 3,
@@ -90,7 +91,7 @@ describe("server module", function() {
 	it("PUT /api/TodoItems/{id} responds with an item", function(done) {
     chai.request(app)
       .put('/api/TodoItems')
-      .send({ 
+      .send({
         todoItemId: 0,
         name: 'an item',
         priority: 3,

@@ -50,6 +50,7 @@ app.post('/api/TodoItems', function(req, res) {
 });
 
 app.get('/api/TodoItems/:id', function(req, res) {
+	console.log(req.params.id);
 	res.json(items[req.params.id]);
 });
 
