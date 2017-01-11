@@ -81,7 +81,29 @@ Javascript web servers and databases
 
 * Passing HTML back to the client
 
-* Interpolation (processing and replacing)
+* Break site structure into reusable pieces
+
+* Default settings (view engine)
+
+----
+
+## EJS
+
+* Interpolation - interjecting dynamic content
+
+* EJS formatting Example:
+```javascript
+<h1><% 1 + 1 %></h1>
+```
+
+* Passing Data
+```javascript
+<h1><%= someObject.title %></h1>
+```
+
+* Looping (breaking in and out)
+
+* Including partials (use [ejs-i](https://www.npmjs.com/package/ejs-i))
 
 
 ---
@@ -110,17 +132,4 @@ Javascript web servers and databases
 
 * Swagger
 
-
----
-
-
-## 6 - Loopback Remote Methods
-
-* Remote methods
-
 * Passport
-
-* Recap
-
-
----
