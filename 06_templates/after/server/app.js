@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // alias the server/views folder if you would like
-//app.set('views', 'server/views');
+app.set('views', 'server/pages');
 
 // Set view engine as EJS
 app.set('view engine', 'ejs');
@@ -64,12 +64,13 @@ const user = {
 };
 
 app.get('/welcome', function(req, res, next) {
-    ejs.render('welcome', { user });
+    res.render('welcome', { user });
 });
 
-app.get('/looping', function(req, res, next) {
-    ejs.render('looping.ejs', { user });
+app.get('/includes', function(req, res, next) {
+	res.render('includes');
 });
+
 
 // route handler for requests to /
 router
