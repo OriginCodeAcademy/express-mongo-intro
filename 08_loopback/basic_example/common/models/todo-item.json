@@ -1,0 +1,30 @@
+{
+  "name": "TodoItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "TodoItemId": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "number"
+    },
+    "text": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean",
+      "required": "required"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -144,7 +144,11 @@ Javascript web servers and databases
 
 * [Yeoman](http://yeoman.io/) Generator is being used
 
-* Install the generator
+----
+
+## Getting Started with Loopback
+
+* install the generator
 ```
 $ npm install -g strongloop
 ```
@@ -200,8 +204,10 @@ $ npm install loopback-connector-mongodb
 
 * Local, staging, and production modes
 ```
-
+test.js
 ```
+
+----
 
 ## Middleware
 
